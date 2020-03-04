@@ -44,7 +44,8 @@ public class FileWatcher {
 
     public void FileWatcherMetod() throws IOException, InterruptedException, SQLException {
         WatchService watchService = FileSystems.getDefault().newWatchService();
-        Path path = Paths.get(System.getProperty("user.home") + "\\Desktop");
+//        Path path = Paths.get(System.getProperty("user.home") + "\\Desktop");
+        Path path = Paths.get("C:\\Users\\user\\Documents\\Notowania 4 MAX\\Pliki CSV");
         log.info("Śledzony folder: " + path);
         path.register(
                 watchService,
